@@ -1,0 +1,22 @@
+.rightSide {
+    padding: 109px 160px 53px 113px;
+    display: flex;
+    align-items: center;
+}
+
+.rightSide a {
+    text-decoration: none;
+    color: #0575E6;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media (max-width: 480px) {
+    .rightSide {
+        padding: 51px 43px 212px 43px;
+        width: 100%;
+    }
+}
