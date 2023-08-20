@@ -5,19 +5,12 @@
     height: 100vh;
 }
 
-.register {
-    color: var(--font-tertiary);
-    font-size: 18px;
-    font-weight: 600;
-}
-
 @media (max-width: 480px) {
     .container {
         flex-direction: column;
         max-width: 100%;
     }
 }
-
 
 @media (min-width: 481px) and (max-width: 1036px) {
     .container {

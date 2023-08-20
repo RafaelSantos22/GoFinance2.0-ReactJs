@@ -45,3 +45,23 @@
         display: none;
     }
 }
+
+@media (min-width: 481px) and (max-width: 1036px) {
+    .header {
+        padding: 30px 0 0 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .circle {
+        display: none;
+    }
+}   

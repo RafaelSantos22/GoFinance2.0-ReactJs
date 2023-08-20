@@ -1,0 +1,101 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input {
+    display: flex;
+    width: 307px;
+    padding: 18px 0px 18px 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid var(--border-color-secondary);
+    outline: 0;
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+.input::placeholder {
+    color: var(--font-secondary);
+    font-family: Poppins;
+    opacity: 0.3;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkbox {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    background-color: var(--bg-checkbox);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.terms {
+    color: var(--font-terms);
+    font-size: 12px;
+    font-weight: 400;
+    width: 256px;
+}
+
+.emailIcon {
+    background-image: url('../../assets/email.svg');
+    background-repeat: no-repeat;
+    background-position: 26px center;
+}
+  
+.passwordIcon {
+    background-image: url('../../assets/password.svg');
+    background-repeat: no-repeat;
+    background-position: 26px center;
+}
+
+.userIcon{
+    background-image: url('../../assets/user.svg');
+    background-repeat: no-repeat;
+    background-position: 26px center;
+}
+
+@media (max-width: 480px) {
+    .formContainer input {
+        width: 100%;
+    }
+
+    .checkboxContainer {
+        width: 285px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1036px) {
+    .terms {
+        font-size: 15px;
+    }
+}   

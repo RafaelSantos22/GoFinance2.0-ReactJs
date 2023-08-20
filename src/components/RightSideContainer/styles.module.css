@@ -1,17 +1,54 @@
 .rightSide {
-    padding: 109px 160px 53px 113px;
+    padding: 272px 160px 272px 108px;
     display: flex;
     align-items: center;
 }
 
-.rightSide a {
-    text-decoration: none;
-    color: #0575E6;
-    font-family: Poppins;
-    font-size: 18px;
+.cardForm {
+    width: 307px;
+}
+
+.cardForm h2,
+.description {
+    color: var(--font-secondary);
     font-style: normal;
-    font-weight: 600;
     line-height: normal;
+}
+
+.cardForm h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.recover {
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.recover a {
+    color: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.back {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.back a {
+    color: #0575E6;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 @media (max-width: 480px) {
@@ -20,3 +57,11 @@
         width: 100%;
     }
 }
+
+@media (min-width: 481px) and (max-width: 1036px) {
+    .rightSide {
+        padding: 30px 0;
+        justify-content: center;
+        height: 100%;
+    }
+}   
