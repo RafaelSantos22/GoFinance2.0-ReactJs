@@ -65,3 +65,10 @@
         height: 100%;
     }
 }   
+
+@media(min-width: 1441px) {
+    .rightSide {
+        justify-content: center;
+        align-items: center;
+    }
+}
