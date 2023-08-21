@@ -1,7 +1,10 @@
 import styles from './styles.module.css';
 import CreditCardIcon from '../../assets/credit-card.svg';
+import { User } from '../../types/User';
 
 export const UserHeader = () => {
+  const user: User = JSON.parse(localStorage.getItem('userData') || '{}');
+
   return (
     <header className={styles.header}>
       <div className={styles.leftSide}>
@@ -10,8 +13,8 @@ export const UserHeader = () => {
       </div>
       <div className={styles.rightSide}>
         <div className={styles.details}>
-          <p>Samantha Freitas</p>
-          <span>sam.freitas@example.com</span>
+          <p>{user.name}</p>
+          <span>{user.email}</span>
         </div>
       </div>
     </header>
