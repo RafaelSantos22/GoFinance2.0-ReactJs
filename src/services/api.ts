@@ -4,6 +4,11 @@ export const api = axios.create({
   baseURL: 'http://academy-react.rarolabs.com.br/'
 });
 
+export const isAuthenticaded = () => {
+  const token = localStorage.getItem('token');
+  return token !== null;
+};
+
 export const getUserById = async (token: string, id: string) => {
   try {
     const response = await api.get(`v1/users/${id}`, {

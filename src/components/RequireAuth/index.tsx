@@ -1,12 +1,8 @@
 import { Navigate } from 'react-router-dom';
+import { isAuthenticaded } from '../../services/api';
 
 type Props = {
   children: React.ReactNode;
-};
-
-const isAuthenticaded = () => {
-  const token = localStorage.getItem('token');
-  return token !== null;
 };
 
 export const RequireAuth = ({ children }: Props) => {

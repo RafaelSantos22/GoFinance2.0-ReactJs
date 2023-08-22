@@ -18,7 +18,7 @@ export const Login = () => {
       const response = await api.post('v1/auth/login', values);
       if (response.status === 200) {
         const { token, id } = response.data;
-        getUserById(token, id);
+        await getUserById(token, id);
         navigate('/user');
       }
     } catch (error) {
